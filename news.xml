@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
         <title>Новости Чемприоната США по ЧГК 2013</title>
         <description>Новости Чемприоната США по ЧГК 2013</description>
         <link>http://usc2013.chgk.info/</link>
+	<atom:link href="http://random-bits-of.info/chgk2013/news.xml" rel="self" type="application/rss+xml" />
         <lastBuildDate>Tue, 12 Feb 2013 00:12:56 -0800 </lastBuildDate>
         <pubDate>Tue, 12 Feb 2013 00:12:56 -0800 </pubDate>
         <ttl>1800</ttl>

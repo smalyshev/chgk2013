@@ -3,3 +3,4 @@ RewriteBase /chgk2013//
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteEngine On
 RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
+AddType application/rss+xml .xml
