@@ -1,0 +1,57 @@
+table.header {
+	width: 100%;
+	background-color: #339966;
+	vertical-align: middle;
+}
+
+tr.header, td.header {
+	vertical-align: middle;
+}
+
+.header td {
+	color: #ffffff;
+	font-family: Arial, sans-serif;
+	font-size: 110%;
+}
+
+.nav {
+	width: 1%;
+	padding-right: 10px;
+	vertical-align: top;
+	border: 0;
+	font-family: Arial, sans-serif;
+}
+
+.content {
+	vertical-align: top;	
+	padding-left: 10px;
+	border-left: 1px solid #cccccc;
+	height: 100%;
+}
+
+.content div {
+	font-family: Arial, sans-serif;
+	overflow-y: auto;
+	height: 100%;
+}
+
+.bottom {
+	text-align: center;
+	vertical-align: middle;
+	font-family: Arial, sans-serif;
+}
+
+.pages {
+	font-weight: bold;
+}
+
+.logo {
+	width: 1%;
+	vertical-align: middle;
+	padding-bottom: 10px;
+}
+
+.current {
+	color: #339966;
+	font-weight: bold;
+}

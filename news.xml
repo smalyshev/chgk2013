@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Новости Чемприоната США по ЧГК 2013</title>
+        <description>Новости Чемприоната США по ЧГК 2013</description>
+        <link>http://usc2013.chgk.info/</link>
+        <lastBuildDate>Tue, 12 Feb 2013 00:12:56 -0800 </lastBuildDate>
+        <pubDate>Tue, 12 Feb 2013 00:12:56 -0800 </pubDate>
+        <ttl>1800</ttl>
+ 
+        <item>
+                <title>Открыт сайт чемпионата</title>
+                <description>Открыт сайт чемпионата США по ЧГК 2013.</description>
+                <link>http://usc2013.chgk.info/</link>
+                <guid>1</guid>
+                <pubDate>Tue, 12 Feb 2013 00:12:56 -0800 </pubDate>
+        </item>
+ 
+</channel>
+</rss>
