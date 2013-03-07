@@ -10,6 +10,14 @@
         <ttl>1800</ttl>
  
         <item>
+                <title>Опубликованы регламенты</title>
+                <description>Опубликованы регламенты чемпионата США по ЧГК 2013.</description>
+                <link>http://usc2013.chgk.info/</link>
+                <guid>http://usc2013.chgk.info/1</guid>
+                <pubDate>Thu, 7 Mar 2013 00:12:56 -0800 </pubDate>
+        </item>
+
+        <item>
                 <title>Открыт сайт чемпионата</title>
                 <description>Открыт сайт чемпионата США по ЧГК 2013.</description>
                 <link>http://usc2013.chgk.info/</link>
