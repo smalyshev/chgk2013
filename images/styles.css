@@ -55,3 +55,7 @@ tr.header, td.header {
 	color: #339966;
 	font-weight: bold;
 }
+
+.schedule td {
+	padding-left: 20px;	
+}
