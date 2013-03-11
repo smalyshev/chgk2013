@@ -5,10 +5,12 @@ $regtypes = array("chgk", "si", "legion");
 $els = array( 
 		"chgk" => array('komanda', 'gorod', 'kapitan', 'email', 'igroki', 'recaptcha_challenge_field', 'recaptcha_response_field'),
 		"si" => array('komanda', 'igrok', 'recaptcha_challenge_field', 'recaptcha_response_field'),
+		"legion" => array("igrok", "email", 'recaptcha_challenge_field', 'recaptcha_response_field'),
 );
 $fields = array(
 		"chgk" => array('komanda', 'nomer', 'gorod', 'kapitan', 'email', 'igroki'),
 		"si" => array('komanda', 'igrok'),
+		"legion" => array("igrok", "email"),
 );
 
 if(empty($_POST['regtype']) || !in_array($_POST['regtype'], $regtypes)) {
