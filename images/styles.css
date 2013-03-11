@@ -29,7 +29,7 @@ tr.header, td.header {
 	height: 100%;
 }
 
-.content div {
+.content div.contentdiv {
 	font-family: Arial, sans-serif;
 	overflow-y: auto;
 	height: 100%;
@@ -58,4 +58,8 @@ tr.header, td.header {
 
 .schedule td {
 	padding-left: 20px;	
+}
+
+#error {
+	color: red;
 }

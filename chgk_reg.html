@@ -1,0 +1,61 @@
+<h1>Зарегистрироваться на ЧГК:</h1><br>
+
+<div id="error"></div>
+<form action="do_reg.php" method="POST" onsubmit="return check_form(this)">
+<input type="hidden" name="regtype" value="chgk"> 
+<table>
+<tr>
+<td>Название команды:</td><td><input type="text" name="komanda" size="60"></td>
+</tr><tr>
+<td>Номер в <a href="http://ratingnew.chgk.info/index.php">Рейтинге МАК</a>:</td><td><input type="text" name="nomer" size="60"></td>
+</tr><tr>
+<td>Город:</td><td><input type="text" name="gorod" size="60"></td>
+</tr><tr>
+<td>Капитан:</td><td><input type="text" name="kapitan" size="60"></td>
+</tr><tr>
+<td>Email:</td><td><input type="text" name="email" size="60"></td>
+</tr><tr>
+<td>Игроки:</td><td><textarea name="igroki" rows="8" cols="50"></textarea>
+</tr><tr>
+<td>Защита от роботов:</td><td>
+<script type="text/javascript"
+     src="http://www.google.com/recaptcha/api/challenge?k=6LchHt4SAAAAAP7nqw4jOmiZV3F-ZWs1DQJxOKj4">
+  </script>
+  <noscript>
+     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LchHt4SAAAAAP7nqw4jOmiZV3F-ZWs1DQJxOKj4"
+         height="300" width="500" frameborder="0"></iframe><br>
+     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+     </textarea>
+     <input type="hidden" name="recaptcha_response_field"
+         value="manual_challenge">
+  </noscript>
+</td></tr><tr>
+<td></td><td><input type="submit" value="Зарегистрироваться!"></td>
+</tr>
+</table>
+</form>
+Заполнение всех полей формы обязательно для регистрации.
+<script>
+function check_form(form) {
+	var els = ['komanda', 'gorod', 'kapitan', 'email', 'igroki'];
+	var bad = false
+	for(i in els) {
+		el = els[i]
+		if(form[el].value == '') {
+			form[el].style['border-color'] = 'red'
+			bad = true
+		} else {
+			form[el].style['border-color'] = ''
+		}
+		
+	}
+	if(bad) {
+		error = document.getElementById('error')
+		error.innerHTML="Пожалуйства, заполните все поля формы!"
+		return false
+	}
+	return true
+} 
+</script>
+
+

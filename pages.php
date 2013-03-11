@@ -12,6 +12,7 @@ $pages = array(
 		),
 	"ЧГК" => 
 		array(
+			"chgk_reg" => "Регистрация",
 			"chgk_regl" => "Регламент",
 			"chgk_par" => "Участники",
 			"results" => "Результаты",
@@ -26,10 +27,16 @@ $pages = array(
 		),
 	"Своя Игра" => 
 		array(
+			"si_reg" => "Регистрация",
 			"si_regl" => "Регламент",
 			"si_par" => "Участники",
 			"si_results" => "Результаты",
 		),
+);
+$subpages = array(
+		'badreg_empty' => 'Ошибка регистрации!',
+		'badreg_robot' => 'Ошибка регистрации!',
+		'goodreg' => 'Регистрация принята',
 );
 
 /////////////////
@@ -39,6 +46,7 @@ if(empty($_GET['page'])) {
 	$current = pathinfo($_GET['page'], PATHINFO_FILENAME);
 }
 
+$flat_index = $subpages;
 foreach($pages as $page => $name) {
 	if(is_array($name)) {
 		$flat_index = array_merge($flat_index, $name);
@@ -46,6 +54,7 @@ foreach($pages as $page => $name) {
 		$flat_index[$page] = $name;
 	}
 }
+
 
 if($current == 'index') {
 	$title = 'Чемпионат по ЧГК 2013';

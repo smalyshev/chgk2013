@@ -24,7 +24,7 @@
     <td class="nav"> 
 	<?php navigation(); ?>
     </td>
-    <td class="content"><div> <?php content(); ?>
+    <td class="content"><div class="contentdiv"> <?php content(); ?>
     </div></td>
   </tr>
   <tr> 
