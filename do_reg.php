@@ -44,7 +44,7 @@ foreach($fields[$_POST['regtype']] as $field) {
 	$data[$field] = $_POST[$field];
 }
 $f = fopen("rgdata/{$_POST['regtype']}", "a+");
-fwrite($f, sprintf("===== %s =====\n%s\n=====\n", date("c"), json_encode($data, JSON_UNESCAPED_UNICODE)));
+fwrite($f, sprintf("===== %s =====\n%s\n=====\n", date("c"), serialize($data)));
 fclose($f);
 
 $_GET['page'] = 'goodreg';
