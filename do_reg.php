@@ -3,12 +3,12 @@ require_once('recaptcha/recaptchalib.php');
 $privatekey = '6LchHt4SAAAAAAuulHlyXGpPn7QzbqgDqVbWCl6Y';
 $regtypes = array("chgk", "si", "legion");
 $els = array( 
-		"chgk" => array('komanda', 'gorod', 'kapitan', 'email', 'igroki', 'recaptcha_challenge_field', 'recaptcha_response_field'),
+		"chgk" => array('komanda', 'gorod', 'kapitan', 'email', 'igroki', 'zachet', 'recaptcha_challenge_field', 'recaptcha_response_field'),
 		"si" => array('komanda', 'igrok', 'recaptcha_challenge_field', 'recaptcha_response_field'),
 		"legion" => array("igrok", "email", 'recaptcha_challenge_field', 'recaptcha_response_field'),
 );
 $fields = array(
-		"chgk" => array('komanda', 'nomer', 'gorod', 'kapitan', 'email', 'igroki'),
+		"chgk" => array('komanda', 'nomer', 'gorod', 'kapitan', 'email', 'igroki', 'zachet'),
 		"si" => array('komanda', 'igrok'),
 		"legion" => array("igrok", "email"),
 );

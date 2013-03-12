@@ -1,12 +1,19 @@
 <h1>Зарегистрироваться на ЧГК:</h1><br>
 <div id="error"></div>
-<form action="do_reg.php" method="POST" onsubmit="return check_form(this, ['komanda', 'gorod', 'kapitan', 'email', 'igroki'])">
+<form action="do_reg.php" method="POST" onsubmit="return check_form(this, ['komanda', 'gorod', 'kapitan', 'email', 'igroki', 'zachet'])">
 <input type="hidden" name="regtype" value="chgk"> 
 <table>
 <tr>
 <td>Название команды:</td><td><input type="text" name="komanda" size="60"></td>
 </tr><tr>
 <td>Номер в <a href="http://ratingnew.chgk.info/index.php">Рейтинге МАК</a>:</td><td><input type="text" name="nomer" size="60"></td>
+</tr><tr>
+<td>Участие в зачёте ЧМ:</td><td><select name="zachet">
+<option value=""></option>
+<option value="1">Да</option>
+<option value="0">Нет</option>
+</select>
+</td>
 </tr><tr>
 <td>Город:</td><td><input type="text" name="gorod" size="60"></td>
 </tr><tr>
