@@ -40,7 +40,7 @@ $subpages = array(
 
 /////////////////
 if(empty($_GET['page'])) {
-	$current = 'news';
+	$current = 'anons';
 } else {
 	$current = pathinfo($_GET['page'], PATHINFO_FILENAME);
 }
