@@ -11,7 +11,7 @@
 <body>
 <table width="95%" border="0" cellspacing="0" cellpadding="0" height="100%">
 <tbody><tr> 
-<td class="logo"><a href="index"><img src="images/logo_us2007_small.png" border="0" width="143" alt="Домой" vspace="1"></a></td>
+<td class="logo"><a href="news"><img src="images/logo_us2007_small.png" border="0" width="143" alt="Домой" vspace="1"></a></td>
     <td valign="middle"> 
         <table class="header">
           <tbody><tr>
@@ -30,7 +30,7 @@
   <tr> 
     <td class="logo"><img src="images/ptica.gif" width="143" height="79" vspace="5" alt="Птица"></td>
     <td class="bottom">
-        <a href="index">Домой</a> - 
+        <a href="news">Домой</a> - 
         <a href="contacts">Контакты</a>
     </td>
   </tr>

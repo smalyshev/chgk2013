@@ -3,25 +3,36 @@
 <channel>
         <title>Новости Чемприоната США по ЧГК 2013</title>
         <description>Новости Чемприоната США по ЧГК 2013</description>
-        <link>http://usc2013.chgk.info/</link>
-	<atom:link href="http://random-bits-of.info/chgk2013/news.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Tue, 12 Feb 2013 00:12:56 -0800 </lastBuildDate>
-        <pubDate>Tue, 12 Feb 2013 00:12:56 -0800 </pubDate>
+        <link>http://us2013.chgk.info/</link>
+	<atom:link href="http://us2013.chgk.info/news.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Tue, 12 Mar 2013 23:27:02 -0700</lastBuildDate>
+        <pubDate>Tue, 12 Mar 2013 23:27:02 -0700</pubDate>
         <ttl>1800</ttl>
  
         <item>
+                <title>Опубликованa информация о гостинице.</title>
+                <description>XVIII Открытый чемпионат США по "Что?
+	Где? Когда?" состоится 20-21 апреля 2013 г. в гостинице <a
+	href="http://www.ihg.com/holidayinn/hotels/us/en/dublin/dubrm/hoteldetail"
+	target="_blank" rel="nofollow">Holiday Inn Dublin</a></description>
+                <link>http://us2013.chgk.info/living</link>
+                <guid>http://us2013.chgk.info/3</guid>
+                <pubDate>Thu, 7 Mar 2013 00:12:56 -0800 </pubDate>
+        </item>
+
+        <item>
                 <title>Опубликованы регламенты</title>
                 <description>Опубликованы регламенты чемпионата США по ЧГК 2013.</description>
-                <link>http://usc2013.chgk.info/</link>
-                <guid>http://usc2013.chgk.info/1</guid>
+                <link>http://us2013.chgk.info/chgk_regl</link>
+                <guid>http://us2013.chgk.info/2</guid>
                 <pubDate>Thu, 7 Mar 2013 00:12:56 -0800 </pubDate>
         </item>
 
         <item>
                 <title>Открыт сайт чемпионата</title>
                 <description>Открыт сайт чемпионата США по ЧГК 2013.</description>
-                <link>http://usc2013.chgk.info/</link>
-                <guid>http://usc2013.chgk.info/1</guid>
+                <link>http://us2013.chgk.info/</link>
+                <guid>http://us2013.chgk.info/1</guid>
                 <pubDate>Tue, 12 Feb 2013 00:12:56 -0800 </pubDate>
         </item>
  

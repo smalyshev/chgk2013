@@ -1,12 +1,10 @@
 <?php
 $pages = array(
-	"index" => "Домой", 
 	"Чемпионат" => 
 		array(
 			"news" => "Новости",
 			"anons" => "Приглашение",
 			"living" => "Размещение",
-			"directions" => "Транспорт",
 			"schedule" => "Расписание",
 			"contacts" => "Контакты",
 		),
@@ -42,7 +40,7 @@ $subpages = array(
 
 /////////////////
 if(empty($_GET['page'])) {
-	$current = 'index';
+	$current = 'news';
 } else {
 	$current = pathinfo($_GET['page'], PATHINFO_FILENAME);
 }
@@ -59,6 +57,8 @@ foreach($pages as $page => $name) {
 
 if($current == 'index') {
 	$title = 'Чемпионат по ЧГК 2013';
+} else if($current == 'living') {
+	$title = "Куда, блин? To Dublin!";
 } else if(!empty($flat_index[$current])) {
 	$title = $flat_index[$current];
 } 
