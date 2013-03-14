@@ -43,6 +43,7 @@ tr.header, td.header {
 
 .pages {
 	font-weight: bold;
+	padding-top: 10px;
 }
 
 .logo {

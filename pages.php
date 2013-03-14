@@ -80,7 +80,7 @@ function print_link($name, $page)
 function navigation() {
 	foreach($GLOBALS['pages'] as $page => $name) {
 		if(is_array($name)) {
-			echo "<span class=\"pages\">$page</span><br>\n";
+			echo "<div class=\"pages\">$page</div>\n";
 				foreach($name as $subpage => $name) {
 					echo "&nbsp;&nbsp;".print_link($name, $subpage);
 				}
