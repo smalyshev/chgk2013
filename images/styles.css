@@ -64,3 +64,24 @@ tr.header, td.header {
 #error {
 	color: red;
 }
+
+.allteams {
+	width: 100%;
+	border-spacing: 3px 10px;
+}
+
+.teamdata {
+	width: 100%;
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: collapse;
+}
+
+.teamdata td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: outset;
+	border-color: black;
+}
