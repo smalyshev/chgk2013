@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /chgk_reg 
+Disallow: /si_reg 
+Disallow: /leg
