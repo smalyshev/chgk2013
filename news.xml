@@ -5,16 +5,31 @@
         <description>Новости Чемприоната США по ЧГК 2013</description>
         <link>http://us2013.chgk.info/</link>
 	<atom:link href="http://us2013.chgk.info/news.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Tue, 12 Mar 2013 23:27:02 -0700</lastBuildDate>
-        <pubDate>Tue, 12 Mar 2013 23:27:02 -0700</pubDate>
+        <lastBuildDate>Thu, 14 Mar 2013 21:26:30 -0700</lastBuildDate>
+        <pubDate>Thu, 14 Mar 2013 21:26:30 -0700</pubDate>
         <ttl>1800</ttl>
+ 
+         <item>
+                <title>Открыта регистрация на чемпионат.</title>
+                <description><![CDATA[
+Вся информация о чемпионате доступна на сайте <a href="http://us2013.chgk.info/">us2013.chgk.info</a>, в том числе:
+<ul><li><a href="http://us2013.chgk.info/schedule" >Расписание</a><br />	
+<li>Формы регистрации (<a href="http://us2013.chgk.info/chgk_reg" >ЧГК</a>, <a href="http://us2013.chgk.info/leg" >легионеры</a>, <a href="http://us2013.chgk.info/si_reg" >Своя игра</a>)<br />	
+<li>Регламенты (<a href="http://us2013.chgk.info/chgk_regl" >ЧГК</a>, <a href="http://us2013.chgk.info/br_regl" >Брейн-ринг</a>, <a href="http://us2013.chgk.info/si_regl" >Своя игра</a>)<br />	
+<li><a href="http://us2013.chgk.info/living" >Информация о гостинице и транспорте</a><br />	
+<li><a href="http://us2013.chgk.info/contacts" >Контакты оргкомитета</a></ul>
+	]]></description>
+                <link>http://us2013.chgk.info/</link>
+                <guid>http://us2013.chgk.info/4</guid>
+                <pubDate>Tue, 12 Mar 2013 23:27:02 -0700 </pubDate>
+        </item>
  
         <item>
                 <title>Опубликованa информация о гостинице.</title>
                 <description><![CDATA[XVIII Открытый чемпионат США по "Что?
 	Где? Когда?" состоится 20-21 апреля 2013 г. в гостинице <a
 	href="http://www.ihg.com/holidayinn/hotels/us/en/dublin/dubrm/hoteldetail"
-	target="_blank" rel="nofollow">Holiday Inn Dublin</a>]]></description>
+	target="_blank" >Holiday Inn Dublin</a>]]></description>
                 <link>http://us2013.chgk.info/living</link>
                 <guid>http://us2013.chgk.info/3</guid>
                 <pubDate>Tue, 12 Mar 2013 23:27:02 -0700 </pubDate>
