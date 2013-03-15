@@ -15,7 +15,7 @@
     <td valign="middle"> 
         <table class="header">
           <tbody><tr>
-            <td><?= $title ?></td>
+            <td class="tdheader <?= $current ?>"><?= $title ?></td>
           </tr>
         </tbody></table>
     </td>
