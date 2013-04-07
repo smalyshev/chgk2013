@@ -5,10 +5,20 @@
         <description>Новости Чемприоната США по ЧГК 2013</description>
         <link>http://us2013.chgk.info/</link>
 	<atom:link href="http://us2013.chgk.info/news.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Thu, 14 Mar 2013 21:26:30 -0700</lastBuildDate>
-        <pubDate>Thu, 14 Mar 2013 21:26:30 -0700</pubDate>
+        <lastBuildDate>Sat, 06 Apr 2013 20:31:05 -0700</lastBuildDate>
+        <pubDate>Sat, 06 Apr 2013 20:31:05 -0700</pubDate>
         <ttl>1800</ttl>
  
+		         <item>
+		                <title>Регистрация на Чемпионат по ЧГК завершена.</title>
+		                <description><![CDATA[
+							Регистрация на Чемпионат по ЧГК завершена. Зарегистрировались <a href="chgk_par">19 команд</a>.
+			]]></description>
+		                <link>http://us2013.chgk.info/chgk_par</link>
+		                <guid>http://us2013.chgk.info/5</guid>
+		                <pubDate>Sat, 06 Apr 2013 20:31:05 -0700</pubDate>
+		        </item>
+
          <item>
                 <title>Открыта регистрация на чемпионат.</title>
                 <description><![CDATA[
