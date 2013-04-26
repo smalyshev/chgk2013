@@ -7,6 +7,7 @@ $pages = array(
 			"living" => "Размещение",
 			"schedule" => "Расписание",
 			"contacts" => "Контакты",
+			"memoirs" => "Отчёты",
 		),
 	"ЧГК" => 
 		array(
@@ -41,7 +42,7 @@ $subpages = array(
 
 /////////////////
 if(empty($_GET['page'])) {
-	$current = 'anons';
+	$current = 'memoirs';
 } else {
 	$current = pathinfo($_GET['page'], PATHINFO_FILENAME);
 }
