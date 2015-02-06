@@ -1,5 +1,5 @@
 Options +FollowSymLinks
-RewriteBase /chgk2013/
+RewriteBase /chgk2015/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteEngine On
 RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]

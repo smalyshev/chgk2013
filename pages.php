@@ -13,21 +13,20 @@ $pages = array(
 		array(
 			"chgk_regl" => "Регламент",
 			"chgk_par" => "Участники",
-			"results" => "Результаты",
-			"voprosy" => "Вопросы",
-			"monos" => "Синхрон Моносова",
+//			"results" => "Результаты",
+//			"voprosy" => "Вопросы",
 		),
 	"Брейн-Ринг" => 
 		array(
 			"br_regl" => "Регламент",
 			"br_par" => "Участники",
-			"br_res" => "Результаты",
+//			"br_res" => "Результаты",
 		),
 	"Своя Игра" => 
 		array(
 			"si_regl" => "Регламент",
 			"si_par" => "Участники",
-			"si_results" => "Результаты",
+//			"si_results" => "Результаты",
 		),
 );
 $subpages = array(
@@ -54,7 +53,7 @@ foreach($pages as $page => $name) {
 
 
 if($current == 'index') {
-	$title = 'Чемпионат по ЧГК 2013';
+	$title = 'Чемпионат по ЧГК 2015';
 } else if($current == 'living') {
 	$title = "Куда, блин? To Dublin!";
 } else if(!empty($flat_index[$current])) {
