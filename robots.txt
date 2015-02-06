@@ -2,3 +2,6 @@ User-agent: *
 Disallow: /chgk_reg 
 Disallow: /si_reg 
 Disallow: /leg
+Disallow: /Harming/humans
+Disallow: /Disobeying/humans
+Disallow: /Harming/self 
