@@ -5,9 +5,9 @@ $pages = array(
 			"news" => "Новости",
 			"anons" => "Приглашение",
 			"living" => "Размещение",
-			"schedule" => "Расписание",
+//			"schedule" => "Расписание",
 			"contacts" => "Контакты",
-			"memoirs" => "Отчёты",
+//			"memoirs" => "Отчёты",
 		),
 	"ЧГК" => 
 		array(
@@ -89,5 +89,5 @@ function navigation() {
 
 function content() {
 	global $current;
-	echo file_get_contents("$current.html");
+	echo file_get_contents("index.html");
 }
