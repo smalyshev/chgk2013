@@ -1,5 +1,6 @@
 <?php
 require_once('recaptcha/recaptchalib.php');
+require_once('Zend/Json.php');
 $privatekey = '6LchHt4SAAAAAAuulHlyXGpPn7QzbqgDqVbWCl6Y';
 $regtypes = array("chgk", "si", "legion");
 $els = array( 
@@ -46,7 +47,7 @@ foreach($fields[$_POST['regtype']] as $field) {
 	$data[$field] = $_POST[$field];
 }
 $f = fopen("rgdata/{$_POST['regtype']}", "a+");
-fwrite($f, sprintf("===== %s =====\n%s\n=====\n", date("c"), json_encode($data, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE)));
+fwrite($f, sprintf("===== %s =====\n%s\n=====\n", date("c"), Zend_Json::prettyPrint(Zend_Json::encode($data))));
 fclose($f);
 
 $_GET['page'] = 'goodreg';
