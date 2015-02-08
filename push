@@ -1,0 +1,2 @@
+git push
+ssh chgk-us2015@us2015.chgk.info 'cd public_html; git pull'
