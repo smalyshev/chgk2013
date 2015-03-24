@@ -24,7 +24,7 @@ function process($row)
 	echo "<li>{$row['igrok']} ({$row['komanda']})\n";
 }
 
-echo "<ul>\n";
+echo "<ol>\n";
 
 $fp = fopen($argv[1], "r");
 while($row = get_row($fp)) {
@@ -35,4 +35,4 @@ foreach($rows as $row) {
 process($row);
 }
 
-echo "</ul>\n";
+echo "</ol>\n";
