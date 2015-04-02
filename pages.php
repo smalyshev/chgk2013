@@ -8,7 +8,8 @@ $pages = array(
 			"schedule" => "Расписание",
 			"contacts" => "Контакты",
 			"memoirs" => "Отчёты",
-		),
+			"memory" => "Мемориальная страница",
+	),
 	"ЧГК" => 
 		array(
 			"chgk_regl" => "Регламент",
