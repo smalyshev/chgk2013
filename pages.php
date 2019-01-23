@@ -1,37 +1,37 @@
 <?php
 $pages = array(
-	"Чемпионат" => 
+	"Чемпионат" =>
 		array(
 			"news" => "Новости",
 			"anons" => "Приглашение",
 //			"living" => "Размещение",
-			"schedule" => "Расписание",
+//			"schedule" => "Расписание",
 			"contacts" => "Контакты",
-			"memoirs" => "Отчёты",
-			"memory" => "Мемориальная страница",
+//			"memoirs" => "Отчёты",
+//			"memory" => "Мемориальная страница",
 	),
-	"ЧГК" => 
+	"ЧГК" =>
 		array(
 			"chgk_regl" => "Регламент",
-//			"chgk_reg" => "Регистрация",
-//			"leg" => "Легионеры",
-			"chgk_par" => "Участники",
-			"jury" => "ИЖ и АЖ",
-			"results" => "Результаты",
+			"chgk_reg" => "Регистрация",
+			"leg" => "Легионеры",
+//			"chgk_par" => "Участники",
+//			"jury" => "ИЖ и АЖ",
+//			"results" => "Результаты",
 //			"voprosy" => "Вопросы",
 		),
-	"Брейн-Ринг" => 
+	"Брейн-Ринг" =>
 		array(
 			"br_regl" => "Регламент",
-			"br_par" => "Участники",
-			"br_res" => "Результаты",
+//			"br_par" => "Участники",
+//			"br_res" => "Результаты",
 		),
-	"Своя Игра" => 
+	"Своя Игра" =>
 		array(
 			"si_regl" => "Регламент",
-//			"si_reg" => "Регистрация",
-			"si_par" => "Участники",
-			"si_results" => "Результаты",
+			"si_reg" => "Регистрация",
+//			"si_par" => "Участники",
+//			"si_results" => "Результаты",
 		),
 );
 $subpages = array(
@@ -58,12 +58,12 @@ foreach($pages as $page => $name) {
 
 
 if($current == 'index') {
-	$title = 'Чемпионат по ЧГК 2015';
+	$title = 'Чемпионат по ЧГК 2019';
 } else if($current == 'living') {
 	$title = "Куда, блин? To Dublin!";
 } else if(!empty($flat_index[$current])) {
 	$title = $flat_index[$current];
-} 
+}
 if(empty($title) || !file_exists("$current.html")) {
 	$title = 'Страница не найдена';
 	$current = '404';
@@ -73,7 +73,7 @@ if(empty($title) || !file_exists("$current.html")) {
 function print_link($name, $page)
 {
 	if($GLOBALS['current'] == $page) {
-		return "<span class=\"current\">$name</span><br>\n";		
+		return "<span class=\"current\">$name</span><br>\n";
 	} else {
 		return "<a href=\"$page\">$name</a><br>\n";
 	}
