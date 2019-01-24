@@ -1,6 +1,6 @@
 Options +FollowSymLinks
-RewriteBase /chgk2015/
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteBase /
 RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
 AddType application/rss+xml .xml

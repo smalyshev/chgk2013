@@ -1,12 +1,11 @@
 <?php
-require_once('recaptcha/recaptchalib.php');
 require_once('Zend/Json.php');
-$privatekey = '6LchHt4SAAAAAAuulHlyXGpPn7QzbqgDqVbWCl6Y';
+include 'recaptcha.php';
 $regtypes = array("chgk", "si", "legion");
-$els = array( 
-		"chgk" => array('komanda', 'gorod', 'kapitan', 'email', 'igroki', 'zachet', 'recaptcha_challenge_field', 'recaptcha_response_field'),
-		"si" => array('komanda', 'igrok', 'recaptcha_challenge_field', 'recaptcha_response_field'),
-		"legion" => array("igrok", "email", 'recaptcha_challenge_field', 'recaptcha_response_field'),
+$els = array(
+		"chgk" => array('komanda', 'gorod', 'kapitan', 'email', 'igroki', 'zachet', 'g-recaptcha-response'),
+		"si" => array('komanda', 'igrok', 'g-recaptcha-response'),
+		"legion" => array("igrok", "email", 'g-recaptcha-response'),
 );
 $fields = array(
 		"chgk" => array('komanda', 'nomer', 'gorod', 'kapitan', 'email', 'igroki', 'zachet'),
@@ -28,17 +27,12 @@ foreach($els[$_POST['regtype']] as $el) {
 	}
 }
 
-if(!empty($_POST["recaptcha_response_field"])) {
-	$resp = recaptcha_check_answer ($privatekey,
-			$_SERVER["REMOTE_ADDR"],
-			$_POST["recaptcha_challenge_field"],
-			$_POST["recaptcha_response_field"]);
-	
-	if (!$resp->is_valid) {
+if(!empty($_POST["g-recaptcha-response"])) {
+	if (!check_captcha($_POST["g-recaptcha-response"])) {
 		// What happens when the CAPTCHA was entered incorrectly
-			$_GET['page'] = 'badreg_robot';
-			include 'index.php';
-			return;
+		$_GET['page'] = 'badreg_robot';
+		include 'index.php';
+		return;
 	}
 }
 

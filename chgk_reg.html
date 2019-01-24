@@ -1,6 +1,3 @@
-Регистрация пока не открыта. Об открытии регистрации будет сообщено отдельно.
-
-<!--
 <h1>Зарегистрироваться на ЧГК:</h1><br>
 <div id="error"></div>
 <form action="do_reg.php" method="POST" onsubmit="return check_form(this, ['komanda', 'gorod', 'kapitan', 'email', 'igroki', 'zachet'])">
@@ -9,7 +6,7 @@
 <tr>
 <td>Название команды:</td><td><input type="text" name="komanda" size="60"></td>
 </tr><tr>
-<td>Идентификационный номер (ID)<br>в <a href="http://ratingnew.chgk.info/teams.php">Рейтинге МАК</a>:</td><td><input type="text" name="nomer" size="60"></td>
+<td>Идентификационный номер (ID)<br>в <a href="http://rating.chgk.info/teams.php">Рейтинге МАК</a>:</td><td><input type="text" name="nomer" size="60"></td>
 </tr><tr>
 <td>Участие в зачёте ЧМ:</td><td><select name="zachet">
 <option value=""></option>
@@ -27,17 +24,7 @@
 <td>Игроки:</td><td><textarea name="igroki" rows="8" cols="50"></textarea>
 </tr><tr>
 <td>Защита от роботов:</td><td>
-<script type="text/javascript"
-     src="http://www.google.com/recaptcha/api/challenge?k=6LchHt4SAAAAAP7nqw4jOmiZV3F-ZWs1DQJxOKj4">
-  </script>
-  <noscript>
-     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LchHt4SAAAAAP7nqw4jOmiZV3F-ZWs1DQJxOKj4"
-         height="300" width="500" frameborder="0"></iframe><br>
-     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
-     </textarea>
-     <input type="hidden" name="recaptcha_response_field"
-         value="manual_challenge">
-  </noscript>
+    <div class="g-recaptcha" data-sitekey="6LemAYwUAAAAAOgSeK0ewqMDHq9vERYJ1QryR-8A"></div>
 </td></tr><tr>
 <td></td><td><input type="submit" value="Зарегистрироваться!"></td>
 </tr>
@@ -65,5 +52,3 @@ function check_form(form, els) {
 	return true
 }
 </script>
-
--->
