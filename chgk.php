@@ -1,4 +1,4 @@
-	<td witdth="50%"><table class="teamdata">
+	<td width="50%"><table class="teamdata">
 	<tbody><tr bgcolor="beige"><td colspan="2" align="center"><font size="+1"><a href="http://ratingnew.chgk.info/teams.php?displayteam=<?= $row['nomer'] ?>"><?= $row['komanda'] ?></a>
 <?php if($row['zachet'] == -1) { ?> <sup><a href="#zach">*</a></sup><?php } ?>
 </font></td></tr>
