@@ -4,7 +4,7 @@ $pages = array(
 		array(
 			"news" => "Новости",
 			"anons" => "Приглашение",
-//			"living" => "Размещение",
+			"living" => "Размещение",
 			"schedule" => "Расписание",
 			"contacts" => "Контакты",
 //			"memoirs" => "Отчёты",
