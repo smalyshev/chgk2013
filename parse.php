@@ -1,4 +1,5 @@
 <?php
+$count = 0;
 function get_row($fp) {
 	while($s = fgets($fp)) {
 		if(substr($s, 0, 6) == "===== ") {
@@ -20,7 +21,7 @@ function get_row($fp) {
 
 function process($row)
 {
-	static $count; 
+	global $count; 
 	$row['igroki'] = strtr($row['igroki'], ",","\n");
 	$igroki = array_map("trim", explode("\n", trim($row['igroki'])));
 	if(($pos = array_search($row['kapitan'], $igroki)) === false) {
@@ -44,4 +45,5 @@ while($row = get_row($fp)) {
 }
 
 echo "</tr></table>";
+echo "Всего зарегистрированы $count команд.<br>";
 echo "<a name=\"zach\"></a><sup>*</sup> Команда играет вне отборочного зачёта ЧМ<br>";
