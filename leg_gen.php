@@ -1,9 +1,11 @@
+Регистрация завершена.
+<!--
 <table>
 <tr><td width="50%">
 <h1>Зарегистрироваться легионером:</h1><br>
 <div id="error"></div>
 <form action="do_reg.php" method="POST" onsubmit="return check_form(this, ['igrok', 'email'])">
-<input type="hidden" name="regtype" value="legion"> 
+<input type="hidden" name="regtype" value="legion">
 <table>
 <tr>
 <td>Игрок:</td><td><input type="text" name="igrok" size="60"></td>
@@ -24,7 +26,7 @@
 <h1>Текущий список легионеров:</h1>
 <i>Если вы зарегистрировались как легионер, и уже нашли себе команду, пожалуйста, <a href="contacts">сообщите Оргкомитету</a> для обновления списка.</i>
 <p/>
-<!-- Our name is legion --> 
+<- Our name is legion ->
 <?= file_get_contents('legioner'); ?>
 </td>
 </tr>
@@ -41,15 +43,15 @@ function check_form(form, els) {
 		} else {
 			form[el].style['border-color'] = ''
 		}
-		
-	}
+
+}
 	if(bad) {
 		error = document.getElementById('error')
 		error.innerHTML="Пожалуйства, заполните все поля формы!"
 		return false
 	}
 	return true
-} 
+}
 </script>
-
+-->
 

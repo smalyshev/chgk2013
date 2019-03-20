@@ -3,7 +3,7 @@ cp rgdata/chgk rgdata/chgk.$d
 cp rgdata/si rgdata/si.$d
 cp rgdata/legion rgdata/legion.$d
 scp -r chgk-us2019@us2019.chgk.info:public_html/rgdata/ .
-php parse.php rgdata/chgk > chgk_par.html 
+php parse.php rgdata/chgk > chgk_par.html
 php lparse.php rgdata/legion > legioner
 php leg_gen.php > leg.html
 php sparse.php rgdata/si > si_par.html
