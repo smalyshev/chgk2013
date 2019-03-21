@@ -40,11 +40,20 @@ $subpages = array(
 		'goodreg' => 'Регистрация принята',
 );
 
+$redirects = array(
+	'apel' => 'https://docs.google.com/forms/d/e/1FAIpQLSd3SjEzNzAQWdz-Inwv0ZiNXR4miAFYZUBiMTt9PxBMLmbkMw/viewform';
+);
+
 /////////////////
 if(empty($_GET['page'])) {
 	$current = 'news';
 } else {
 	$current = pathinfo($_GET['page'], PATHINFO_FILENAME);
+}
+
+if (isset($redirects[$current])) {
+	header("Location: {$redirects[$current]}");
+	exit();
 }
 
 $flat_index = $subpages;
