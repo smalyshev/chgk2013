@@ -41,7 +41,7 @@ $subpages = array(
 );
 
 $redirects = array(
-	'apel' => 'https://docs.google.com/forms/d/e/1FAIpQLSd3SjEzNzAQWdz-Inwv0ZiNXR4miAFYZUBiMTt9PxBMLmbkMw/viewform';
+	'apel' => 'https://docs.google.com/forms/d/e/1FAIpQLSd3SjEzNzAQWdz-Inwv0ZiNXR4miAFYZUBiMTt9PxBMLmbkMw/viewform'
 );
 
 /////////////////
