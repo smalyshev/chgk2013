@@ -31,7 +31,7 @@ $pages = array(
 			"si_regl" => "Регламент",
 			"si_reg" => "Регистрация",
 			"si_par" => "Участники",
-//			"si_results" => "Результаты",
+			"si_results" => "Результаты",
 		),
 );
 $subpages = array(
